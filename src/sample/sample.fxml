@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="542.0">
+         <top>
+            <Button mnemonicParsing="false" onAction="#button" prefHeight="21.0" prefWidth="146.0" text="SØG" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <TextArea fx:id="textArea" minWidth="-Infinity" prefHeight="161.0" prefWidth="204.0" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <AnchorPane prefHeight="161.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="inputFieldStartStation" layoutY="3.0" prefHeight="39.0" prefWidth="170.0" />
+                  <ComboBox fx:id="comboBoxStartTime" layoutY="42.0" minWidth="-Infinity" onAction="#StartTime" prefHeight="39.0" prefWidth="170.0" />
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="161.0" prefWidth="166.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="inputFieldEndStation" layoutY="3.0" prefHeight="39.0" prefWidth="170.0" />
+                  <ComboBox fx:id="comboBoxEndTime" layoutY="42.0" onAction="#EndTime" prefHeight="39.0" prefWidth="170.0" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</GridPane>
