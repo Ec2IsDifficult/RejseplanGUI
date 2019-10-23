@@ -7,14 +7,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
-
-import javax.xml.transform.Result;
 import java.sql.*;
-import java.util.ResourceBundle;
 
 
 public class Controller {
-
 
     @FXML
     TextArea textArea;
@@ -26,6 +22,7 @@ public class Controller {
     ComboBox<String> comboBoxStartTime;
     @FXML
     ComboBox<String> comboBoxEndTime;
+
     private ObservableList<String> timeList = FXCollections.observableArrayList("00.00", "00.30", "01.00", "01.30",
             "02.00", "02.30", "03.00", "03.30", "04.00", "04.30", "05.00", "05.30", "06.00", "06.30", "07.00", "07.30", "08.00", "08.30",
             "09.00", "09.30", "10.00", "10.30", "11.00", "11.30", "12.00", "12.30", "13.00", "13.30", "14.00", "14.30",
@@ -44,6 +41,12 @@ public class Controller {
 
     public void EndTime() {
         return;
+    }
+
+    public void clearButton(ActionEvent actionEvent) {
+        inputFieldStartStation.clear();
+        inputFieldEndStation.clear();
+        textArea.clear();
     }
 
     //Detects action event from the GUI

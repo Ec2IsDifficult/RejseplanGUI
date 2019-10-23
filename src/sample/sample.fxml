@@ -50,6 +50,9 @@
                </children>
             </AnchorPane>
          </top>
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#clearButton" text="Ryd Felter" BorderPane.alignment="CENTER" />
+         </bottom>
       </BorderPane>
    </children>
 </GridPane>
